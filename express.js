@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
     });
 });
 
-const port = 3000;
+const port = 3002;
 app.listen(port, () => {
     console.log(`Port running at http://localhost:${port}`);
 });
