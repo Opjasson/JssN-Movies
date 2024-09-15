@@ -20,6 +20,13 @@ app.get("/", (req, res) => {
     });
 });
 
+app.get("/about",(req,res)=>{
+    res.render("about",{
+        layout : "./layouts/main-layout",
+        title : "About page"
+    })
+})
+
 const port = 3002;
 app.listen(port, () => {
     console.log(`Port running at http://localhost:${port}`);

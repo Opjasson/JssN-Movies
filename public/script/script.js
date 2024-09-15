@@ -21,7 +21,6 @@ document.addEventListener("click", function (e) {
 const searchbutton = document.querySelector(".search-button");
 
 searchbutton.addEventListener("click",async function () {
-    console.log("haloo")
     try {
         const inputKeyword = document.querySelector(".input-keyword");
         const movie = await getMovie(inputKeyword.value)
